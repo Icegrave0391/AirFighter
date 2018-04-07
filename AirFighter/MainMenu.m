@@ -27,8 +27,15 @@
     self.myAvatar=[UIImage imageNamed:@"avatar"];
     [self.avatarView setImage:self.myAvatar];
     // Do any additional setup after loading the view, typically from a nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveScore:) name:@"GameViewReturn" object:nil] ;
 }
 
+-(void)receiveScore :(NSNotification *)notification{
+    self.score =(long) notification.object ;
+}
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self] ;
+}
 - (IBAction)RankBtnClicked:(id)sender {
     RankTableViewController * tvc=[[RankTableViewController alloc] init];
     [self.navigationController pushViewController:tvc animated:YES];

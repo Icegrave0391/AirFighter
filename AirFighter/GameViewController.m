@@ -46,7 +46,7 @@
     
     self.enemyViewSet = [NSMutableSet set] ;
     self.bulletViewSet = [NSMutableSet set] ;
-    //时间设定
+   
     
     //游戏视图设定
     UIView * gameView = [[UIView alloc] initWithFrame:self.view.bounds] ;
@@ -64,14 +64,18 @@
     [self setWholeGameModel] ;
     
     //分数面板
-    UILabel * scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 10, 200, 20) ] ;
+    UILabel * scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.gameView.frame)-20, 200, 20) ] ;
     scoreLabel.adjustsFontSizeToFitWidth = NO ;
     scoreLabel.textColor = [UIColor blackColor] ;
     scoreLabel.backgroundColor = [UIColor clearColor] ;
+    
+    self.scoreLabel = scoreLabel ;
+    [self.gameView addSubview:self.scoreLabel] ;
     //开始游戏
     [self startTimer] ;
     
 }
+/*
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES] ;
     
@@ -81,8 +85,10 @@
     
     //游戏视图设定
     UIView * gameView = [[UIView alloc] initWithFrame:self.view.bounds] ;
+    gameView.backgroundColor = [UIColor whiteColor] ;
     [self.view addSubview:gameView] ;
     self.gameView = gameView ;
+    
     //初始化控制视图
     UIView * controlVIew = [[UIView alloc] initWithFrame:self.view.bounds] ;
     controlVIew.backgroundColor = [UIColor clearColor] ;
@@ -90,14 +96,19 @@
     self.controlView = controlVIew ;
     
     //模型设定
+    [self setWholeGameModel] ;
     
     //分数面板
-    UILabel * scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 10, 200, 20) ] ;
+    UILabel * scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.gameView.frame)-20, 200, 20) ] ;
     scoreLabel.adjustsFontSizeToFitWidth = NO ;
     scoreLabel.textColor = [UIColor blackColor] ;
     scoreLabel.backgroundColor = [UIColor clearColor] ;
-    [self.view addSubview:scoreLabel] ;
-}
+    
+    self.scoreLabel = scoreLabel ;
+    [self.gameView addSubview:self.scoreLabel] ;
+    //开始游戏
+    [self startTimer] ;
+}*/
 
 -(void)setWholeGameModel{
     //初始化游戏模型
@@ -256,26 +267,28 @@ static long long _time ;
     for(EnemyView * enemyView in self.enemyViewSet){
         if(CGRectIntersectsRect(enemyView.frame, self.gameModel.airFighter.hitRect)){
             
-          //  [self gameOver] ;
+            [self gameOver] ;
         }
     }
 }
 //游戏结束
+
+-(void)gameOver{
+    [self.timer invalidate] ;
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"游戏结束"
+                                                                    message:[NSString stringWithFormat:@"您的得分为%ld",(long)self.score]
+                                                             preferredStyle:UIAlertControllerStyleAlert] ;
+    
+    UIAlertAction * defaultAction = [UIAlertAction actionWithTitle:@"回到主界面"
+                                                             style:UIAlertActionStyleDefault
+                                                           handler:^(UIAlertAction * action){
+                                                               [[NSNotificationCenter defaultCenter] postNotificationName:@"GameViewReturn" object:[NSNumber numberWithInteger:self.score]] ;
+                                                               [self.navigationController popViewControllerAnimated:YES] ;
+                                                           }];
+    [alert addAction:defaultAction] ;
+    [self presentViewController:alert animated:YES completion:nil] ;
+}
 /*
--(void) gameOver{
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"游戏结束"
-                                                    message:[NSString stringWithFormat:@"您的得分是%ld\n,点击按钮回到主菜单",(long)self.score]
-                                                   delegate:self
-                                          cancelButtonTitle:@"回到主菜单"
-                                          otherButtonTitles:nil] ;
-    [alert show] ;
-    
-}
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    [self reset] ;
-    
-}
 -(void)reset{
     self.score = 0 ;
     self.scoreLabel.text = nil ;
@@ -290,7 +303,8 @@ static long long _time ;
         [bulletView removeFromSuperview];
     }
     [self.bulletViewSet removeAllObjects];
-}*/
+}
+*/
 
 //点击移动
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

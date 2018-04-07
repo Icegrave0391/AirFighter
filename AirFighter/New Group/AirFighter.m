@@ -33,10 +33,11 @@
 }
 //设置我方飞机被撞范围
 -(CGRect)hitRect{
-    CGFloat x = self.position.x - self.size.width/2 ;
-    CGFloat y = self.position.y - self.size.height/2 ;
-    CGFloat width = self.size.width ;
-    CGFloat height = self.size.height ;
+    CGSize realSize = CGSizeMake(40, 40) ;
+    CGFloat x = self.position.x - realSize.width/2 ;
+    CGFloat y = self.position.y - realSize.height/2 ;
+    CGFloat width = realSize.width ;
+    CGFloat height = realSize.height ;
     
     return CGRectMake(x, y, width, height) ;
 }
