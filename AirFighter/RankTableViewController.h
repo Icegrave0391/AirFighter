@@ -10,4 +10,6 @@
 
 @interface RankTableViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource>
 
+@property(nonatomic, strong)NSArray * scoreArray ;
+
 @end

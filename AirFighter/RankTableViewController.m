@@ -23,6 +23,13 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //设置tableview
+    self.tableView.dataSource = self ;
+    self.tableView.delegate = self ;
+    self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0) ;
+    NSString * file =[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"score.data"] ;
+    
+    self.scoreArray = [NSKeyedUnarchiver unarchiveObjectWithFile:file] ;
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -41,18 +48,28 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return self.scoreArray.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString * cellID = @"cell" ;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID] ;
     
+    if(cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID] ;
+    }
     // Configure the cell...
-    
+    cell.textLabel.textColor = [UIColor whiteColor] ;
+    NSInteger num = indexPath.row ;
+    int score = (int)[[self.scoreArray objectAtIndex:num] integerValue] ;
+    cell.backgroundColor = [UIColor grayColor];
+    cell.textLabel.text = [NSString stringWithFormat:@"%d",score] ;
+    cell.textLabel.textColor = [UIColor redColor] ;
+    NSLog(@"cell: %@",cell.textLabel.text) ;
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

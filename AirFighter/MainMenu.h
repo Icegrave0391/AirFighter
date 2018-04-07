@@ -11,7 +11,8 @@
 #import "GameViewController.h"
 @interface MainMenu : UIViewController
 
-@property(nonatomic,assign)NSInteger score ;
+@property(nonatomic, strong)NSMutableArray * score ;
+
 
 @end
 
