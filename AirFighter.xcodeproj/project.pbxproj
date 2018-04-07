@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		085B70A5206255BB00820A52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B70A4206255BB00820A52 /* AppDelegate.m */; };
+		085B70A8206255BB00820A52 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B70A7206255BB00820A52 /* MainMenu.m */; };
+		085B70AB206255BB00820A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085B70A9206255BB00820A52 /* Main.storyboard */; };
+		085B70AD206255BB00820A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 085B70AC206255BB00820A52 /* Assets.xcassets */; };
+		085B70B0206255BB00820A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085B70AE206255BB00820A52 /* LaunchScreen.storyboard */; };
+		085B70B3206255BB00820A52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B70B2206255BB00820A52 /* main.m */; };
+		085B70BB206280DC00820A52 /* RankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B70BA206280DC00820A52 /* RankTableViewController.m */; };
+		0878767B20773E23006089E2 /* AirFighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0878767A20773E23006089E2 /* AirFighter.m */; };
+		0878767E20774121006089E2 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0878767D20774121006089E2 /* Bullet.m */; };
+		0878768120774242006089E2 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0878768020774242006089E2 /* Enemy.m */; };
+		0878768420774A1E006089E2 /* AirGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0878768320774A1E006089E2 /* AirGame.m */; };
+		0878768B20776115006089E2 /* AirFIghterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0878768A20776115006089E2 /* AirFIghterView.m */; };
+		0878768E207761DD006089E2 /* EnemyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0878768D207761DD006089E2 /* EnemyView.m */; };
+		087876912077634C006089E2 /* BulletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087876902077634C006089E2 /* BulletView.m */; };
+		08F5A78C2062812B009B1899 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F5A78B2062812B009B1899 /* GameViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		085B70A0206255BB00820A52 /* AirFighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirFighter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		085B70A3206255BB00820A52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		085B70A4206255BB00820A52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		085B70A6206255BB00820A52 /* MainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		085B70A7206255BB00820A52 /* MainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
+		085B70AA206255BB00820A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		085B70AC206255BB00820A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		085B70AF206255BB00820A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		085B70B1206255BB00820A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		085B70B2206255BB00820A52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		085B70B9206280DC00820A52 /* RankTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankTableViewController.h; sourceTree = "<group>"; };
+		085B70BA206280DC00820A52 /* RankTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankTableViewController.m; sourceTree = "<group>"; };
+		0878767920773E23006089E2 /* AirFighter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirFighter.h; sourceTree = "<group>"; };
+		0878767A20773E23006089E2 /* AirFighter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirFighter.m; sourceTree = "<group>"; };
+		0878767C20774121006089E2 /* Bullet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		0878767D20774121006089E2 /* Bullet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
+		0878767F20774242006089E2 /* Enemy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		0878768020774242006089E2 /* Enemy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+		0878768220774A1E006089E2 /* AirGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirGame.h; sourceTree = "<group>"; };
+		0878768320774A1E006089E2 /* AirGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirGame.m; sourceTree = "<group>"; };
+		0878768920776115006089E2 /* AirFIghterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AirFIghterView.h; path = VIew/AirFIghterView.h; sourceTree = "<group>"; };
+		0878768A20776115006089E2 /* AirFIghterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AirFIghterView.m; path = VIew/AirFIghterView.m; sourceTree = "<group>"; };
+		0878768C207761DD006089E2 /* EnemyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemyView.h; path = VIew/EnemyView.h; sourceTree = "<group>"; };
+		0878768D207761DD006089E2 /* EnemyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EnemyView.m; path = VIew/EnemyView.m; sourceTree = "<group>"; };
+		0878768F2077634C006089E2 /* BulletView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BulletView.h; sourceTree = "<group>"; };
+		087876902077634C006089E2 /* BulletView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BulletView.m; sourceTree = "<group>"; };
+		08F5A78A2062812B009B1899 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		08F5A78B2062812B009B1899 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		085B709D206255BB00820A52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085B7097206255BB00820A52 = {
+			isa = PBXGroup;
+			children = (
+				085B70A2206255BB00820A52 /* AirFighter */,
+				085B70A1206255BB00820A52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		085B70A1206255BB00820A52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085B70A0206255BB00820A52 /* AirFighter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085B70A2206255BB00820A52 /* AirFighter */ = {
+			isa = PBXGroup;
+			children = (
+				085B70A3206255BB00820A52 /* AppDelegate.h */,
+				085B70A4206255BB00820A52 /* AppDelegate.m */,
+				0878768920776115006089E2 /* AirFIghterView.h */,
+				0878768A20776115006089E2 /* AirFIghterView.m */,
+				0878768C207761DD006089E2 /* EnemyView.h */,
+				0878768D207761DD006089E2 /* EnemyView.m */,
+				0878768F2077634C006089E2 /* BulletView.h */,
+				087876902077634C006089E2 /* BulletView.m */,
+				0878768520774C70006089E2 /* Model */,
+				085B70A6206255BB00820A52 /* MainMenu.h */,
+				085B70A7206255BB00820A52 /* MainMenu.m */,
+				085B70B9206280DC00820A52 /* RankTableViewController.h */,
+				085B70BA206280DC00820A52 /* RankTableViewController.m */,
+				08F5A78A2062812B009B1899 /* GameViewController.h */,
+				08F5A78B2062812B009B1899 /* GameViewController.m */,
+				085B70A9206255BB00820A52 /* Main.storyboard */,
+				085B70AC206255BB00820A52 /* Assets.xcassets */,
+				085B70AE206255BB00820A52 /* LaunchScreen.storyboard */,
+				085B70B1206255BB00820A52 /* Info.plist */,
+				085B70B2206255BB00820A52 /* main.m */,
+			);
+			path = AirFighter;
+			sourceTree = "<group>";
+		};
+		0878768520774C70006089E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0878768220774A1E006089E2 /* AirGame.h */,
+				0878768320774A1E006089E2 /* AirGame.m */,
+				0878767920773E23006089E2 /* AirFighter.h */,
+				0878767A20773E23006089E2 /* AirFighter.m */,
+				0878767C20774121006089E2 /* Bullet.h */,
+				0878767D20774121006089E2 /* Bullet.m */,
+				0878767F20774242006089E2 /* Enemy.h */,
+				0878768020774242006089E2 /* Enemy.m */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		085B709F206255BB00820A52 /* AirFighter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085B70B6206255BB00820A52 /* Build configuration list for PBXNativeTarget "AirFighter" */;
+			buildPhases = (
+				085B709C206255BB00820A52 /* Sources */,
+				085B709D206255BB00820A52 /* Frameworks */,
+				085B709E206255BB00820A52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirFighter;
+			productName = AirFighter;
+			productReference = 085B70A0206255BB00820A52 /* AirFighter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		085B7098206255BB00820A52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "李嘉银";
+				TargetAttributes = {
+					085B709F206255BB00820A52 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 085B709B206255BB00820A52 /* Build configuration list for PBXProject "AirFighter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 085B7097206255BB00820A52;
+			productRefGroup = 085B70A1206255BB00820A52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				085B709F206255BB00820A52 /* AirFighter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		085B709E206255BB00820A52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085B70B0206255BB00820A52 /* LaunchScreen.storyboard in Resources */,
+				085B70AD206255BB00820A52 /* Assets.xcassets in Resources */,
+				085B70AB206255BB00820A52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		085B709C206255BB00820A52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0878768420774A1E006089E2 /* AirGame.m in Sources */,
+				0878768120774242006089E2 /* Enemy.m in Sources */,
+				087876912077634C006089E2 /* BulletView.m in Sources */,
+				0878767E20774121006089E2 /* Bullet.m in Sources */,
+				08F5A78C2062812B009B1899 /* GameViewController.m in Sources */,
+				085B70A8206255BB00820A52 /* MainMenu.m in Sources */,
+				085B70B3206255BB00820A52 /* main.m in Sources */,
+				085B70A5206255BB00820A52 /* AppDelegate.m in Sources */,
+				0878767B20773E23006089E2 /* AirFighter.m in Sources */,
+				085B70BB206280DC00820A52 /* RankTableViewController.m in Sources */,
+				0878768B20776115006089E2 /* AirFIghterView.m in Sources */,
+				0878768E207761DD006089E2 /* EnemyView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		085B70A9206255BB00820A52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085B70AA206255BB00820A52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		085B70AE206255BB00820A52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085B70AF206255BB00820A52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		085B70B4206255BB00820A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		085B70B5206255BB00820A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		085B70B7206255BB00820A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDVXT95SNR;
+				INFOPLIST_FILE = AirFighter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = emmm.AirFighter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		085B70B8206255BB00820A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDVXT95SNR;
+				INFOPLIST_FILE = AirFighter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = emmm.AirFighter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		085B709B206255BB00820A52 /* Build configuration list for PBXProject "AirFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085B70B4206255BB00820A52 /* Debug */,
+				085B70B5206255BB00820A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		085B70B6206255BB00820A52 /* Build configuration list for PBXNativeTarget "AirFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085B70B7206255BB00820A52 /* Debug */,
+				085B70B8206255BB00820A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 085B7098206255BB00820A52 /* Project object */;
+}
